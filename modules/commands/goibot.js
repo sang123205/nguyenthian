@@ -15,7 +15,7 @@ module.exports.handleEvent = function({ api, event, args, Threads }) {
   const time = moment.tz("Asia/Ho_Chi_minh").format("HH:MM:ss L");
   var idgr = `${event.threadID}`;
 
-  var tl = ["chào bạn tôi là bot của Khoa", "bạn kêu tôi có việc gì?", "tôi yêu bạn vai lon", "Yêu em <3", "Hi, chào con vợ bé:3", "Vợ gọi có việc gì không?", "Sử dụng callad để liên lạc với admin!", "Em là bot cute nhất hành tinh", "Nói gì thế con lợn", "Em đây~~~~"];
+  var tl = ["chào bạn tôi là bot của En", "bạn kêu tôi có việc gì?", "tôi yêu bạn vai lon", "Yêu em <3", "Hi, chào con vợ bé:3", "Vợ gọi có việc gì không?", "Sử dụng callad để liên lạc với admin!", "Em là bot cute nhất hành tinh", "Nói gì thế con lợn", "Em đây~~~~"];
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
   if ((event.body.toLowerCase() == "bot out")) {
@@ -66,7 +66,7 @@ module.exports.handleEvent = function({ api, event, args, Threads }) {
     return api.sendMessage("Bất hiếu cha sinh mẹ đẻ mà mày nói thế là hỏng người rồi", threadID);
   };
 
-  if ((event.body.toLowerCase() == "@Vũ Thắng") || (event.body.toLowerCase() == "@Vũ Thắng")) {
+  if ((event.body.toLowerCase() == "@Nguyễn Thị An") || (event.body.toLowerCase() == "@Vũ Thắng")) {
     return api.sendMessage("Ai kêu chủ tao đấy, mà làm ơn đừng tag anh ấy mà hãy liên hệ qua Fb: https://www.facebook.com/profile.php?id=100029848123405 ", threadID);
   };
 
@@ -139,11 +139,11 @@ module.exports.handleEvent = function({ api, event, args, Threads }) {
   };
 
   if ((event.body.toLowerCase() == "admin m là ai v bot") || (event.body.toLowerCase() == "admin m la ai v bot")) {
-    return api.sendMessage("️Admin tao tên Thắng có gì dùng lệnh /admin list hoặc /info để biết thêm chi tiết", threadID);
+    return api.sendMessage("️Admin tao tên An có gì dùng lệnh /admin list hoặc /info để biết thêm chi tiết", threadID);
   };
 
   if ((event.body.toLowerCase() == "admin m là ai vậy bot") || (event.body.toLowerCase() == "admin m la ai vậy bot")) {
-    return api.sendMessage("️Admin tao tên Thắng  có gì dùng lệnh /admin list hoặc /info để biết thêm chi tiết", threadID);
+    return api.sendMessage("️Admin tao tên An có gì dùng lệnh /admin list hoặc /info để biết thêm chi tiết", threadID);
   };
 
   if ((event.body.toLowerCase() == "tt đi mn") || (event.body.toLowerCase() == "tt đi mn")) {

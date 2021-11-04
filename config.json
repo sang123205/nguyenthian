@@ -13,10 +13,10 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "Bot Dởm 2 lệnh",
-    "PREFIX": ".",
+    "BOTNAME": "Bot Sao Hỏa",
+    "PREFIX": "/",
     "ADMINBOT": [
-        "100071149253340",
+        "100067651996076",
         "",
         ""
     ],
@@ -34,7 +34,7 @@
         "selfListen": true,
         "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1.2 Safari/605.1.15"
     },
-    "version": "1.2.14",
+    "version": "1.2.9",
     "checktt": {
         "maxColumn": 10
     },
@@ -103,7 +103,7 @@
     },
     "menu": {
         "autoUnsend": true,
-        "delayUnsend": 120,
+        "delayUnsend": 120000,
         "unsendMessageAfter": 5
     },
     "covid": {

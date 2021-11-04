@@ -14,7 +14,7 @@ module.exports.run = async function({ api, event, Users }) {
 	const { threadID } = event;
 	if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
 		api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "Bypass bởi Mai Huy Bảo" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-		return api.sendMessage(`Đ𝑎̃ 𝑘𝑒̂́𝑡 𝑛𝑜̂́𝑖 𝑡ℎ𝑎̀𝑛ℎ 𝑐𝑜̂𝑛𝑔 🤡! 𝐵𝑜𝑡 𝑛𝑎̀𝑦 𝑑𝑜 𝑎𝑖 đ𝑜́ 𝑡𝑎̣𝑜 𝑟𝑎 𝑣𝑎̀ 𝐵𝑦𝑝𝑎𝑠𝑠 Gban by Mai Huy Bảo 🥳\n𝑉𝑎̀ 𝑏𝑜𝑡 đ𝑎𝑛𝑔 đ𝑢̛𝑜̛̣𝑐 𝑠𝑢̛̉ 𝑑𝑢̣𝑛𝑔 𝑏𝑜̛̉𝑖 𝑁𝑔𝑢𝑦𝑒̂̃𝑛 𝑀𝑎̣𝑛ℎ 𝐾ℎ𝑜𝑎 😍\n𝐷𝑢̀𝑛𝑔 𝑙𝑒̣̂𝑛ℎ >menu đ𝑒̂̉ 𝑏𝑖𝑒̂́𝑡 𝑐𝑎́𝑐 𝑙𝑒̣̂𝑛ℎ <3`, threadID);
+		return api.sendMessage(`Đ𝑎̃ 𝑘𝑒̂́𝑡 𝑛𝑜̂́𝑖 𝑡ℎ𝑎̀𝑛ℎ 𝑐𝑜̂𝑛𝑔 🤡! 𝐵𝑜𝑡 𝑛𝑎̀𝑦 𝑑𝑜 𝑎𝑖 đ𝑜́ 𝑡𝑎̣𝑜 𝑟𝑎 𝑣𝑎̀ 𝐵𝑦𝑝𝑎𝑠𝑠 Gban by Mai Huy Bảo 🥳\n𝑉𝑎̀ 𝑏𝑜𝑡 đ𝑎𝑛𝑔 đ𝑢̛𝑜̛̣𝑐 𝑠𝑢̛̉ 𝑑𝑢̣𝑛𝑔 𝑏𝑜̛̉𝑖 Nguyễn Thị An 😍\n𝐷𝑢̀𝑛𝑔 𝑙𝑒̣̂𝑛ℎ >menu đ𝑒̂̉ 𝑏𝑖𝑒̂́𝑡 𝑐𝑎́𝑐 𝑙𝑒̣̂𝑛ℎ <3`, threadID);
 	}
 	else {
 		try {

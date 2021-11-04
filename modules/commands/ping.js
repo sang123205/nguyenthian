@@ -16,7 +16,7 @@ module.exports.run = async function({ api, event, args }) {
 		global.moduleData["afk"] && global.moduleData["afk"].afkList ? listAFK = Object.keys(global.moduleData["afk"].afkList || []) : listAFK = []; 
 		listUserID = event.participantIDs.filter(ID => ID != botID && ID != event.senderID);
 		listUserID = listUserID.filter(item => !listAFK.includes(item));
-		var body = (args.length != 0) ? args.join(" ") : "Đã xóa bạn ra khỏi nhóm", mentions = [], index = 0;
+		var body = (args.length != 0) ? args.join(" ") : "Thỉnh các cụ lên tt con cúng cho nải chuối nek 🙏", mentions = [], index = 0;
 		for(const idUser of listUserID) {
 			body = "‎" + body;
 			mentions.push({ id: idUser, tag: "‎", fromIndex: index - 1 });
